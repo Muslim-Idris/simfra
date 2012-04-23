@@ -1,5 +1,7 @@
 ﻿<?php
 
+// It's always safe to execute
+// PHP code in seperate namespace
 function stdinc_namespace() {
 
 	function append_include_path($path) {
