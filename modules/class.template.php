@@ -66,4 +66,18 @@ class Template {
 		}
 	}
 
+	/**
+	 * Setter method to assign or change value without using the assign() method.
+	 */
+	public static __set($key, $value) {
+		$this->vars[$key] = $value;
+	}
+
+	/**
+	 * Getter method to get value without using the get() method.
+	 */
+	public static __get($key) {
+		return $this->vars[$key];
+	}
+
 }
