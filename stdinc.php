@@ -4,7 +4,7 @@
 // PHP code in seperate namespace
 function stdinc_namespace() {
 
-	function append_include_path($path) {
+	function append_include_path() {
 		$arrIncPath = explode(':', get_include_path());
 		foreach(func_get_args() as $path) {
 			if(in_array($path, $arrIncPath) === false) {
