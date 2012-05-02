@@ -16,3 +16,9 @@ $objConfig = Singleton::getInstance('Config', array('main'));
 $tpl = Singleton::getInstance('Template', array('index'));
 $tpl->assign('name', 'Muslim');
 $tpl->exec();
+
+$userList = new UserList();
+foreach($userList as $k => $user) {
+	print_r(compact('k', 'user'));
+}
+
