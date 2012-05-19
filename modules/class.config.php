@@ -46,8 +46,8 @@ class Config implements ArrayAccess, Countable {
 		if($this->data !== $this->origData) {
 			$content = "<?php\n"
 			         . "\n"
-						. "return " . var_export($this->data, true)
-						;
+			         . "return " . var_export($this->data, true)
+			         ;
 			file_put_contents($this->file, var_export($this->data, true));
 		}
 	}
