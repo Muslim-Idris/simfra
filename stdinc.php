@@ -22,10 +22,12 @@ function stdinc_namespace() {
 		extract($__vars__);
 		return require($__file__);
 	}
-	function include_once_namespace($__file__) {
+	function include_once_namespace($__file__, $__vars__ = array()) {
+		extract($__vars__);
 		return include_once($__file__);
 	}
-	function require_once_namespace($__file__) {
+	function require_once_namespace($__file__, $__vars__ = array()) {
+		extract($__vars__);
 		return require_once($__file__);
 	}
 
