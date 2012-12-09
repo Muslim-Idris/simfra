@@ -60,7 +60,7 @@ function stdinc_namespace() {
 	}
 
 	spl_autoload_register(function($className) {
-		require_once_namespace('modules/class.'.strtolower($className).'.php');
+		require_once_namespace('modules/class.'.$className.'.php');
 	});
 
 };
