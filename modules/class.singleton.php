@@ -78,7 +78,6 @@ class Singleton {
 	 * @return string
 	 */
 	private static function getHash($className, $args) {
-		$className = strtolower($className);
 		return $args
 		     ? hash('crc32b', serialize(array($className, $args)))
 		     : $className;
