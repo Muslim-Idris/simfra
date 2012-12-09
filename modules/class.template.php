@@ -47,8 +47,8 @@ class Template {
 	 * @var  string $name
 	 */
 	public function __construct($name) {
-		$this->name = strtolower($name);
-		$this->file = 'templates/'.$this->name.'.php';
+		$this->name = $name;
+		$this->file = 'templates/'.$name.'.php';
 	}
 
 	/**
