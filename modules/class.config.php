@@ -53,8 +53,8 @@ class Config implements ArrayAccess, Countable {
 	 * @param string $name
 	 */
 	public function __construct($name) {
-		$this->name = strtolower($name);
-		$this->file = 'configs/'.$this->name.'.php';
+		$this->name = $name;
+		$this->file = 'configs/'.$name.'.php';
 		$data = include_namespace($this->file);
 		if(is_array($data)) {
 			$this->data = $this->origData = $data;
